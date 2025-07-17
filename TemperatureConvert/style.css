@@ -1,53 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Temperature Converter</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f4f8;
-      text-align: center;
-      padding: 50px;
-    }
-
-    h1 {
-      color: #333;
-    }
-
-    label {
-      display: block;
-      margin: 15px 0 5px;
-      font-weight: bold;
-    }
-
-    input, select {
-      padding: 10px;
-      font-size: 16px;
-      width: 200px;
-    }
-
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-
-    #result {
-      margin-top: 20px;
-      font-size: 18px;
-      color: green;
-    }
-
-    #error {
-      color: red;
-      margin-top: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
+
+  <h1>Temperature Converter</h1>
+
+  <label for="temperature">Enter Temperature:</label>
+  <input type="text" id="temperature" />
+
+  <label for="conversionType">Convert to:</label>
+  <select id="conversionType">
+    <option value="toCelsius">Fahrenheit to Celsius</option>
+    <option value="toFahrenheit">Celsius to Fahrenheit</option>
+  </select>
+
+  <br>
+  <button id="convertBtn">Convert</button>
+
+  <p id="result"></p>
+  <p id="error"></p>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
